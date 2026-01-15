@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Heimdal Fysikalske</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Fixed background -->
+  <div class="bg" aria-hidden="true"></div>
+
+  <!-- App shell -->
+  <div class="app">
+
+    <!-- HEADER (top bar ) -->
+   <header class="app-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Til forsiden">
+      <img class="brand-logo" src="Bilder/Logo.png" alt="Heimdal Fysikalske" />
+    </a>
+
+    <!-- Desktop nav -->
+    <nav class="nav" aria-label="Hovedmeny">
+      <a class="nav-link" href="index.html#hjem">Hovedside</a>
+
+      <div class="nav-dropdown">
+        <button class="nav-link nav-trigger" type="button" aria-expanded="false" aria-controls="menu-behandling">
+          Behandling
+        </button>
+
+        <div class="dropdown-menu" id="menu-behandling" role="menu">
+          <a class="dropdown-btn" href="ultralyd.html">
+            Ultralyd <span class="dropdown-arrow">→</span>
+          </a>
+          <a class="dropdown-btn" href="fysioterapi.html">
+            Fysioterapi <span class="dropdown-arrow">→</span>
+          </a>
+        </div>
+      </div>
+
+      <a class="nav-link" href="mads.html">Fysioterapeuter</a>
+      <a class="nav-link" href="index.html#kontakt">Kontaktinfo</a>
+
+      <a class="nav-cta"
+         href="https://helse.aspit.no/landing?clinicId=ad191b94-9dc8-49fd-9884-5990a4308be7"
+         target="_blank" rel="noopener">
+        Bestill time (helprivat fysioterapeut)
+      </a>
+    </nav>
+
+    <!-- Mobile menu button -->
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mobileNav">
+      Meny
+    </button>
+  </div>
+
+  <!-- Mobile nav (لازم يكون برا .header-inner) -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobilmeny">
+    <a class="mobile-link" href="index.html#hjem">Hovedside</a>
+
+    <div class="mobile-dd" id="mobileBehandling">
+      <button class="mobile-dd-btn" type="button" aria-expanded="false">
+        Behandling <span class="dropdown-arrow">→</span>
+      </button>
+
+      <div class="mobile-dd-menu">
+        <a class="mobile-link" href="ultralyd.html">Ultralyd</a>
+        <a class="mobile-link" href="fysioterapi.html">Fysioterapi</a>
+      </div>
+    </div>
+
+    <a class="mobile-link" href="mads.html">Fysioterapeuter</a>
+    <a class="mobile-link" href="index.html#kontakt">Kontaktinfo</a>
+
+    <a class="mobile-cta"
+       href="https://helse.aspit.no/landing?clinicId=ad191b94-9dc8-49fd-9884-5990a4308be7"
+       target="_blank" rel="noopener">
+      Bestill time (helprivat fysioterapi)
+    </a>
+  </nav>
+</header>
+
+
+    <!-- CONTENT (scroll) -->
+    <main class="screen" id="screen">
+
+      <!-- HERO -->
+      <section class="hero" id="hjem" aria-label="Velkommen">
+        <div class="glass hero-card">
+          <p class="eyebrow">HEIMDAL FYSIKALSKE INSTITUTT</p>
+   <h1 class="hero-title">
+  <div class="hero-line">Fysioterapi</div>
+    <div class="hero-line sub">Psykomotorisk fysioterapi</div>
+  <div class="hero-line">Ultralyd­diagnostikk</div>
+
+</h1>
+
+
+
+          <p class="hero-text">
+            Trygg og profesjonell behandling — med fokus på funksjon, smerte og rehabilitering.
+          </p>
+
+          <div class="hero-actions">
+  <a class="btn btn-ghost left-cta" href="index.html#kontakt">Kontakt oss</a>
+
+</div>
+
+          <div class="chips" aria-label="Tjenester">
+            <span class="chip">Ultralyd</span>
+            <span class="chip">Fysioterapi</span>
+            <span class="chip">Rehabilitering</span>
+          </div>
+        </div>
+      </section>
+
+  
+      <!-- KONTAKT -->
+      <section class="section" id="kontakt">
+        <div class="container">
+          <h2 class="section-title">Kontaktinfo</h2>
+
+          <div class="contact-grid"> 
+            <div class="glass contact-box">
+              <h3>Kontakt</h3>
+              <p>Fysioterapeuter med kommunalt driftstilskudd</p>
+              <p>NB! Timebestilling kun på telefon</p>
+              <p><strong>Telefontid:</strong> 10:00–13:00 mandag-fredag</p>
+              <p><strong>Telefon:</strong> 72 84 59 60</p>
+              <p><strong>Adresse:</strong><br>Heimdalsvegen 18<br>7080 Heimdal</p>
+            </div>
+
+            <div class="glass contact-box" id="bestill">
+              <h3>Bestill time</h3>
+              <p><strong>Helprivat fysioterapi</strong> (kort ventetid)</p>
+              <p><strong>Telefon:</strong> 41 33 25 64</p>
+               <p><strong>E-post:</strong> fysiomb@gmail.com </p>
+
+              <div class="contact-actions">
+                <a class="btn btn-primary"
+                   href="https://helse.aspit.no/landing?clinicId=ad191b94-9dc8-49fd-9884-5990a4308be7"
+                   target="_blank" rel="noopener">
+                  Åpne online bestilling
+                </a>
+              </div>
+            </div>
+          </div>
+          </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="container">
+          <small>© Heimdal Fysikalske</small>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
