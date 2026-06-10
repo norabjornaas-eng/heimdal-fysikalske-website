@@ -41,3 +41,13 @@ Through this project, I improved my skills in:
 * Contact form integration
 * Improved accessibility
 * Additional language support
+## Screenshots
+
+### Home Page
+<img width="939" height="855" alt="image" src="https://github.com/user-attachments/assets/d27e1996-fe05-48cf-8c2b-f9d5b3d09a18" />
+
+  
+### physiotherapists Page
+<img width="908" height="859" alt="image" src="https://github.com/user-attachments/assets/f6adc0ec-35da-4c18-bdd0-4d17e1f61961" />
+
+
